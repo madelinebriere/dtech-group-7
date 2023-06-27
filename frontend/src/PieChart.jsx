@@ -3,11 +3,11 @@ import { PieChart, Pie, Tooltip, Cell } from "recharts";
 
 export const CustomPieChart = () => {
   const data = [
-    { name: "uncompleted", value: 90 },
-    { name: "completed", value: 10 }
+    { name: "Percentage incomplete", value: 90 },
+    { name: "Percentage complete", value: 10 }
   ];
 
-  const COLORS = ["lightgreen", "darkgreen"]; // Define an array of colors for the segments
+  const COLORS = ["#8cf38c", "#095309"]; // Define an array of colors for the segments
 
   return (
     <div className="pie-chart">

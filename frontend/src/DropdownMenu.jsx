@@ -36,7 +36,7 @@ export const DropdownMenu = () => {
                     <DropdownItem text="Home" path = "/Home" />
                     <DropdownItem text="Learning Modules" path="/Learning1" />
                     <DropdownItem text="Quiz" path="/Quiz" />
-                    <DropdownItem text={"Market Simulator Game"} />
+                    <DropdownItem text={"Market Simulator"} />
                     <DropdownItem text="Chatbot" path="/Bot" />
                 </ul>
             </div> 

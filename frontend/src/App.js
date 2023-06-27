@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import logo from './logo.svg';
 import './App.css';
 import { Login } from './Login';
 import { Welcome } from './Welcome';
@@ -10,7 +9,6 @@ import { Quiz } from './Quiz';
 import { Bot } from './Bot';
 
 function App() {
-  const [currentForm, setCurrentForm] = useState('login');
   return (
     <div className="App">
       {/* <Router> */}

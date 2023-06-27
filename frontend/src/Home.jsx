@@ -9,17 +9,18 @@ import Picture3 from './Picture3.png';
 import gift4 from './gift4.png';
 import Stock1 from './Stock1.png';
 import Stock2 from './Stock2.png';
+import Logo from './logo.png';
 
 export const Home = () => {
     return (
         <div className="home">
 
             <DropdownMenu />
+            <img src={Logo} className="logo"/>
 
             <div class="line-horizontal"></div>
             <div class="line-vertical"></div>
 
-            <p><span class="page-name">MoneyMaestro</span></p>
             <p><span class="welcome-note">Welcome back, <b>Savvy Sadie</b>!</span></p>
             
             <div className="section1-container">
@@ -96,12 +97,13 @@ export const Home = () => {
                         <p><span class="t7"><strong>$187.00</strong></span></p>
                         <p><span class="t8">+3.04(1.65%)today</span></p>
                     </div>
-                    <button className="pfl-btn"> <strong>Manage Your Portfolio</strong></button>
+                    <button> <strong>Manage Your Portfolio</strong></button>
                 </div>
             </div>
 
             <div className="section4-container">
                 <p><span class="section-head"><strong>Wishlist</strong></span></p>
+                <div class="sqaures">
                 <div class="square1">
                     <img src={Picture1} className="award-image"/>
                     <p class = "text1">Amazon Gift Card</p>
@@ -121,6 +123,7 @@ export const Home = () => {
                     <img src={gift4} className="award-image"/>
                     <p class = "text1">Bose Speakers</p>
                     <p class = "text2">$699</p>
+                </div>
                 </div>
             </div>
         </div>

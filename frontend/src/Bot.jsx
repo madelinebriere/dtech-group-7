@@ -31,6 +31,7 @@ export const Bot = () => {
   };
 
   return (
+    <div>
     <div className="chatbot-container">
       <h1>Chatbot</h1>
       <div className="chat-messages">
@@ -49,6 +50,7 @@ export const Bot = () => {
         />
         <button onClick={handleUserMessage}>Send</button>
       </div>
+    </div>
     </div>
   );
 };

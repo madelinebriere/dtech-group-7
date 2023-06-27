@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { DropdownMenu } from './DropdownMenu';
+import Logo from './logo.png';
+
 
 export const Quiz = () => {
   const [answers, setAnswers] = useState([]);
@@ -82,6 +84,7 @@ export const Quiz = () => {
   return (
     <div className="quiz-div">
     <DropdownMenu />
+    <img src={Logo} className="logo"/>
     <div className="quiz-container">
       <h1>Quiz Page</h1>
       <form onSubmit={handleSubmit}>

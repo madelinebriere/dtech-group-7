@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { DropdownMenu } from './DropdownMenu';
 import { useNavigate } from 'react-router-dom';
+import Logo from './logo.png';
 
 export const Learning1 = () => {
 
@@ -12,6 +13,7 @@ export const Learning1 = () => {
     return (
         <div className="learning-module-1">
             <DropdownMenu />
+            <img src={Logo} className="logo"/>
             <div class="line-vertical-1"></div>
             <p><span class="page-name">Learning Module - 401K Investment</span></p>
             <div className="left-column">
