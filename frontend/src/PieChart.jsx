@@ -7,7 +7,7 @@ export const CustomPieChart = () => {
     { name: "completed", value: 10 }
   ];
 
-  const COLORS = ["#AEF359", "#028A0F"]; // Define an array of colors for the segments
+  const COLORS = ["lightgreen", "darkgreen"]; // Define an array of colors for the segments
 
   return (
     <div className="pie-chart">

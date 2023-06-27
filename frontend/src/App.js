@@ -6,6 +6,8 @@ import { Login } from './Login';
 import { Welcome } from './Welcome';
 import { Home } from './Home';
 import { Learning1 } from './Learning1';
+import { Quiz } from './Quiz';
+import { Bot } from './Bot';
 
 function App() {
   const [currentForm, setCurrentForm] = useState('login');
@@ -17,58 +19,12 @@ function App() {
           <Route path="/Welcome" element={<Welcome />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Learning1" element={<Learning1 />} />
+          <Route path="/Quiz" element={<Quiz />} />
+          <Route path="/Bot" element={<Bot />} />
         </Routes>
       {/* </Router> */}
     </div>
   );
 }
-
-// import { Welcome } from './Welcome';
-// function App() {
-//   return (
-//     <div className="App">
-//       <Welcome />
-//     </div>
-//   );
-// }
-
-// import { Home } from './Home';
-// function App() {
-//   return (
-//     <div className="App">
-//       <Home />
-//     </div>
-//   );
-// }
-
-
-// import { Learning1 } from './Learning1';
-// function App() {
-//   return (
-//     <div className="App">
-//       <Learning1 />
-//     </div>
-//   );
-// }
-
-
-// import { CustomPieChart } from './PieChart';
-// function App() {
-//   return (
-//     <div className="App">
-//       <CustomPieChart />
-//     </div>
-//   );
-// }
-
-// import { ProgressBar } from './ProgressBar';
-// function App() {
-//   return (
-//     <div className="App">
-//       <ProgressBar />
-//     </div>
-//   );
-// }
-
 
 export default App;

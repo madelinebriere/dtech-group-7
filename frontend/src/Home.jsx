@@ -19,9 +19,8 @@ export const Home = () => {
             <div class="line-horizontal"></div>
             <div class="line-vertical"></div>
 
-            <p><span class="page-name">Home</span></p>
-            <p><span class="welcome-note">Welcome back,</span></p>
-            <p><span class="name">NAME</span></p>
+            <p><span class="page-name">MoneyMaestro</span></p>
+            <p><span class="welcome-note">Welcome back, <b>Savvy Sadie</b>!</span></p>
             
             <div className="section1-container">
                 <p><span class="section-head">Goal Meter</span></p>

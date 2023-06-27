@@ -9,7 +9,6 @@ export const DropdownMenu = () => {
         let handler = (e)=>{
           if(!menuRef.current.contains(e.target)){
             setOpen(false);
-            console.log(menuRef.current);
           }      
         };
     
@@ -20,12 +19,15 @@ export const DropdownMenu = () => {
         }
     
       });
-
+      
+    function handleClick(){
+        setOpen(!open);
+    }
 
     return (
         <div className = "DropDownMenu">
-        <div className="menu-container" ref={menuRef}>
-            <div className="menu-trigger" onClick={() => setOpen(!open)}>
+        <div className="menu-container" onClick={(e)=>handleClick()} ref={menuRef}>
+            <div className="menu-trigger">
                 <img src={menu} className="menu-icon"></img>
             </div>
                 
@@ -33,9 +35,9 @@ export const DropdownMenu = () => {
                 <ul>
                     <DropdownItem text="Home" path = "/Home" />
                     <DropdownItem text="Learning Modules" path="/Learning1" />
-                    <DropdownItem text={"Quiz"} />
+                    <DropdownItem text="Quiz" path="/Quiz" />
                     <DropdownItem text={"Market Simulator Game"} />
-                    <DropdownItem text={"Chatbot"} />
+                    <DropdownItem text="Chatbot" path="/Bot" />
                 </ul>
             </div> 
         </div>

@@ -1,8 +1,17 @@
 import React, { useState } from "react";
+import { DropdownMenu } from './DropdownMenu';
+import { useNavigate } from 'react-router-dom';
 
 export const Learning1 = () => {
+
+    const navigate = useNavigate();
+    function handleClick(){
+        navigate("/Quiz");
+    }
+ 
     return (
         <div className="learning-module-1">
+            <DropdownMenu />
             <div class="line-vertical-1"></div>
             <p><span class="page-name">Learning Module - 401K Investment</span></p>
             <div className="left-column">
@@ -49,7 +58,7 @@ export const Learning1 = () => {
                 <p className="paragraph">Generally, you can start taking distributions from your 401(k) without penalty at age 59½. If you take distributions before this age, you may be subject to taxes and a 10% early withdrawal penalty.</p>
                 <p className="paragraph">In some circumstances, you may be able to take a loan from your 401(k). However, this should be considered carefully due to potential tax implications and the impact on your long-term retirement savings.</p>
 
-                <button className="to-quiz">Click to take the Quiz: Level 1</button>
+                <button className="to-quiz" onClick={(e)=>handleClick()} >Click to take the Quiz: Level 1</button>
                 
             </div>
         </div>

@@ -1,32 +1,3 @@
-// import React, { useEffect } from "react";
-// import { useNavigate } from 'react-router-dom';
-
-
-// export const Welcome = () => {
-//   const navigate = useNavigate();
-
-//     return (
-//         <div className="welcome-page">
-//             <h2>Welcome back</h2>
-//             <h2>NAME!</h2>
-//         </div>
-//     )
-
-// //     useEffect(() => {
-// //       const handleClick = () => {
-// //         navigate("/Home");
-// //       };
-  
-// //       document.addEventListener('click', handleClick);
-  
-// //       return () => {
-// //         document.removeEventListener('click', handleClick);
-// //       };
-// //     }, [navigate]);
-
-// }
-
-
 import React, { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
@@ -35,7 +6,9 @@ export const Welcome = () => {
 
   useEffect(() => {
     const handleClick = () => {
-      navigate("/Home");
+      setTimeout(() => {
+        navigate("/Home");
+      }, 2000);
     };
 
     document.addEventListener('click', handleClick);
@@ -47,8 +20,7 @@ export const Welcome = () => {
 
   return (
     <div className="welcome-page">
-        <h2>Welcome back</h2>
-        <h2>NAME!</h2>
+        <h2>Welcome back, Savvy Sadie!</h2>
     </div>
   );
 };
