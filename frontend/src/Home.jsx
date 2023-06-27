@@ -10,8 +10,15 @@ import gift4 from './gift4.png';
 import Stock1 from './Stock1.png';
 import Stock2 from './Stock2.png';
 import Logo from './logo.png';
+import { useNavigate } from 'react-router-dom';
 
 export const Home = () => {
+    const navigate = useNavigate();
+
+    function handleClick(){
+        navigate("/Learning1");
+    }
+
     return (
         <div className="home">
 
@@ -32,8 +39,8 @@ export const Home = () => {
             <div className="section2-container">
                 <p><span class="section-head">Learning Modules in Progress</span></p>
                 <p><span class="sub2">You're almost there! Click below to continue training.</span></p>
-                <div className="module-1">
-                    <p><span class="module-name"><strong>401K Investing Module:</strong></span></p>
+                <div className="module-1" onClick={(e)=>handleClick()}>
+                    <p><span class="module-name"><strong>401K Investing Module</strong></span></p>
                     <div className="pb-container">
                         <div className="progress-bar">
                             <div className="progress-bar-fill-1"></div>

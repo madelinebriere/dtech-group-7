@@ -12,6 +12,15 @@
   color: black;
 }
 
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 button {
   border: none;
   background-color: var(--darkgreen);
@@ -133,6 +142,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  animation: fade-in 1s ease-in forwards;
 }
 
 h2{
@@ -167,6 +177,7 @@ h2{
 /* Home page */
 .home {
     width: 100%;
+    animation: fade-in 0.5s ease-in forwards;
 }
 
 .welcome-note{
@@ -466,15 +477,15 @@ h2{
 }
 
 .menu-icon {
-  padding: 10px;
+  padding: 20px 10px;
   width: 40px;
   height: 40px;
 }
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% - 10px); /* Adjust the value here */
-  left: 0;
+  top: 100%; 
+  left: 20px;
   z-index: 999;
   visibility: hidden;
   background-color: lightgreen;
@@ -483,7 +494,7 @@ h2{
   border-radius: 4px;
   color: var(--darkgreen);
   font-style: italic;
-  transition: opacity 0.5s ease, visibility 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.1s ease, visibility 0.1s ease, transform 0.1s ease;
   transform: translateY(-10px);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4); /* Adds a subtle box shadow */
 }
@@ -696,6 +707,10 @@ ul{
   width:550px;
 }
 
+.module-1:hover{
+    opacity: 0.7;
+}
+
 .module-2{
   display: flex;
   flex-direction: column;
@@ -828,14 +843,22 @@ ul{
 }
 
 /* Chatbot*/
-.chatbot-container {
-  max-width: 400px;
+.chat-div {
+  display: flex;
+}
+
+.chat-container {
+  max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: lightgreen;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  right: 2%;
+  bottom: 2%;
 }
 
 .chat-messages {
@@ -850,6 +873,7 @@ ul{
   border-radius: 10px;
   margin-bottom: 10px;
   align-self: flex-end;
+  text-align: right;
 }
 
 .bot-message {
@@ -867,7 +891,7 @@ ul{
 
 .user-input input {
   flex: 1;
-  padding: 8px;
+  padding: 14px;
   border: 1px solid #ccc;
   border-radius: 5px;
   margin-right: 10px;
@@ -883,7 +907,7 @@ ul{
 }
 
 .user-input button:hover {
-  background-color: #62ef62;
+  opacity: 0.8;
 }
 
 .user-input button:focus {
