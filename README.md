@@ -1,9 +1,13 @@
-# (App's Name): Financial Planning and Education Web App
-## Demo Test
-Here is a working live demo for the web app: (add a link for the demo)
+# MoneyMaestro: Financial Planning and Education Web App
 ## Introduction
-- the project's aim & brief intro (discuss with PM group)
-- The app is built with: (technologies)
+This web application, built with ReactJS and Flask, is a financial planning and education program. It includes:
+- Learning modules & corresponding quizzes for a variety of financial topics required for financial literacy
+- A chatbot for assistance on financial questions.
+- (Incomplete) A market simulation game.
+
+The current product is for demo purposes only.
+
+Product Design document is available [here](https://docs.google.com/document/d/1Cq9XeT3Mb4oRasJjgDLL_ELr0_0Gh3R0uBVnAnwgwYs/edit?usp=sharing).
 ## Features
 ### Financial Planning
 Users could set their personal financial goals and record their financial information. The app's financial planning section visualize users' financial situation, progress toward goals, and offer suggestions to improve financial health.
@@ -21,4 +25,8 @@ The app integrates ChatGPT functionality to answer financial questions, facilita
 ## Future Steps
 
 ## Credit
-This project is completed in DTech Build in June, 2023.  Team members: Meeraa Ramakrishnan, Alina Yin, Ananya, Jen Shin, Kashish Maheshwari, Yura Heo at Duke University.  Appreciation to our mentors Catherine and Maddie, and the DTech Build program.
+This project was completed in DTech Build in June, 2023.  
+
+Team members: Meeraa Ramakrishnan, Alina Yin, Ananya, Jen Shin, Kashish Maheshwari, Yura Heo at Duke University.  
+
+Appreciation to our mentors Catherine and Maddie, and the DTech Build program.
